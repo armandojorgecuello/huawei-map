@@ -484,8 +484,7 @@ class HuaweiMapMethodChannel {
         );
       },
       onCreatePlatformView: (PlatformViewCreationParams params) {
-        final AndroidViewController controller =
-            PlatformViewsService.initExpensiveAndroidView(
+        final AndroidViewController controller =PlatformViewsService.initSurfaceAndroidView(
           id: params.id,
           viewType: Channel.channel,
           layoutDirection: TextDirection.ltr,
